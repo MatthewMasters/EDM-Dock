@@ -209,7 +209,7 @@ BOND_TYPES = {
     BT.AROMATIC: 3,
     BT.UNSPECIFIED: 4
 }
-PERIODIC_TABLE = pd.read_csv('/data/masters/datasets/atom_data.csv', index_col=0)
+PERIODIC_TABLE = pd.read_csv('periodic_table.csv', index_col=0)
 
 
 def load_ligand(ligand_path):

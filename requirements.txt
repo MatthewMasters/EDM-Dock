@@ -1,9 +1,0 @@
-easydict~=1.9
-rdkit~=2021.03.2
-parmed~=3.4.1
-numpy~=1.20.3
-tqdm~=4.61.0
-yaml~=0.2.5
-pyyaml~=5.4.1
-argparse~=1.4.0
-setuptools~=52.0.0

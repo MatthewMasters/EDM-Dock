@@ -1,0 +1,9 @@
+amber/
+data/
+build/
+dist/
+runs/other
+EDM_Dock.egg-info/
+dev_scripts/
+lightning_logs/
+DGSOL/
