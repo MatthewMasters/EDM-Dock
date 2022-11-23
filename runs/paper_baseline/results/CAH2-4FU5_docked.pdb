@@ -1,0 +1,28 @@
+COMPND    /data/masters/datasets/disco/data/CAH2/PDB_Structures/4FU5_LIG.pdb
+HETATM    1  N1  UNL     1      -4.368   2.308  14.795  1.00  0.00           N  
+HETATM    2  C1  UNL     1      -5.369   1.936  15.429  1.00  0.00           C  
+HETATM    3  N2  UNL     1      -5.838   0.739  15.749  1.00  0.00           N  
+HETATM    4  O1  UNL     1      -6.140   3.055  15.021  1.00  0.00           O  
+HETATM    5  C2  UNL     1      -4.028   3.623  15.386  1.00  0.00           C  
+HETATM    6  C3  UNL     1      -5.425   3.845  16.007  1.00  0.00           C  
+HETATM    7  S1  UNL     1      -5.567   0.092  17.310  1.00  0.00           S  
+HETATM    8  N3  UNL     1      -4.760  -0.833  16.302  1.00  0.00           N  
+HETATM    9  O2  UNL     1      -6.947   0.009  17.806  1.00  0.00           O  
+HETATM   10  O3  UNL     1      -5.044   1.196  18.121  1.00  0.00           O  
+HETATM   11  H1  UNL     1      -6.370   0.195  15.055  1.00  0.00           H  
+HETATM   12  H2  UNL     1      -3.227   3.563  16.137  1.00  0.00           H  
+HETATM   13  H3  UNL     1      -3.633   4.401  14.716  1.00  0.00           H  
+HETATM   14  H4  UNL     1      -5.729   4.903  16.009  1.00  0.00           H  
+HETATM   15  H5  UNL     1      -5.559   3.578  17.065  1.00  0.00           H  
+HETATM   16  H6  UNL     1      -4.181  -1.497  16.834  1.00  0.00           H  
+HETATM   17  H7  UNL     1      -5.422  -1.353  15.709  1.00  0.00           H  
+CONECT    1    2    2    5
+CONECT    2    3    4
+CONECT    3    7   11
+CONECT    4    6
+CONECT    5    6   12   13
+CONECT    6   14   15
+CONECT    7    8    9    9   10
+CONECT    7   10
+CONECT    8   16   17
+END

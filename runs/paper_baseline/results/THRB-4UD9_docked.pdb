@@ -1,0 +1,22 @@
+COMPND    /data/masters/datasets/disco/data/THRB/PDB_Structures/4UD9_LIG.pdb
+HETATM    1  N1  UNL     1       9.959 -12.640  21.882  1.00  0.00           N  
+HETATM    2  C1  UNL     1      11.330 -12.441  21.739  1.00  0.00           C  
+HETATM    3  O1  UNL     1      12.275 -13.159  21.947  1.00  0.00           O  
+HETATM    4 CL1  UNL     1      12.002  -7.156  23.191  1.00  0.00          CL  
+HETATM    5  C2  UNL     1      11.749 -11.088  22.038  1.00  0.00           C  
+HETATM    6  C3  UNL     1      11.407 -10.686  23.287  1.00  0.00           C  
+HETATM    7  C4  UNL     1      12.128  -9.690  23.741  1.00  0.00           C  
+HETATM    8  C5  UNL     1      12.444  -8.826  22.789  1.00  0.00           C  
+HETATM    9  S1  UNL     1      12.786  -9.867  21.514  1.00  0.00           S  
+HETATM   10  H1  UNL     1       9.302 -11.883  21.645  1.00  0.00           H  
+HETATM   11  H2  UNL     1       9.602 -13.543  22.224  1.00  0.00           H  
+HETATM   12  H3  UNL     1      10.597 -11.153  23.867  1.00  0.00           H  
+HETATM   13  H4  UNL     1      12.436  -9.583  24.792  1.00  0.00           H  
+CONECT    1    2   10   11
+CONECT    2    3    3    5
+CONECT    4    8
+CONECT    5    6    6    9
+CONECT    6    7   12
+CONECT    7    8    8   13
+CONECT    8    9
+END

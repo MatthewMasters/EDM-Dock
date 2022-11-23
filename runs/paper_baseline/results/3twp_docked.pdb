@@ -1,0 +1,27 @@
+COMPND    3twp_ligand
+HETATM    1  C1  UNL     1      71.806  82.263  26.034  1.00  0.00           C  
+HETATM    2  O1  UNL     1      71.092  82.440  24.853  1.00  0.00           O  
+HETATM    3  O2  UNL     1      72.443  83.258  26.367  1.00  0.00           O  
+HETATM    4  C2  UNL     1      71.285  81.399  27.046  1.00  0.00           C  
+HETATM    5  C3  UNL     1      70.350  80.466  26.729  1.00  0.00           C  
+HETATM    6  C4  UNL     1      70.314  79.327  27.560  1.00  0.00           C  
+HETATM    7  C5  UNL     1      70.453  79.649  28.922  1.00  0.00           C  
+HETATM    8  C6  UNL     1      71.675  80.224  29.135  1.00  0.00           C  
+HETATM    9  C7  UNL     1      71.913  81.300  28.247  1.00  0.00           C  
+HETATM   10  O3  UNL     1      70.036  80.397  25.358  1.00  0.00           O  
+HETATM   11  H1  UNL     1      70.542  81.700  24.491  1.00  0.00           H  
+HETATM   12  H2  UNL     1      70.191  78.301  27.185  1.00  0.00           H  
+HETATM   13  H3  UNL     1      69.695  79.467  29.697  1.00  0.00           H  
+HETATM   14  H4  UNL     1      72.388  79.890  29.904  1.00  0.00           H  
+HETATM   15  H5  UNL     1      72.629  82.082  28.538  1.00  0.00           H  
+HETATM   16  H6  UNL     1      69.364  79.745  25.037  1.00  0.00           H  
+CONECT    1    2    3    3    4
+CONECT    2   11
+CONECT    4    5    5    9
+CONECT    5    6   10
+CONECT    6    7    7   12
+CONECT    7    8   13
+CONECT    8    9    9   14
+CONECT    9   15
+CONECT   10   16
+END

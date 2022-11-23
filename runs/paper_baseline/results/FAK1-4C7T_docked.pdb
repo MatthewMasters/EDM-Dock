@@ -1,0 +1,103 @@
+HETATM    1  CAA LIG A1685       6.690   5.378   8.680  1.00 22.51           C  
+HETATM    2  CAB LIG A1685       8.379   0.243   6.158  1.00 24.48           C  
+HETATM    3  CAC LIG A1685      10.403   1.463   3.191  1.00 25.34           C  
+HETATM    4  CAD LIG A1685       8.156   0.032   3.609  1.00 28.20           C  
+HETATM    5  CAF LIG A1685       8.376   3.598   5.013  1.00 25.33           C  
+HETATM    6  CAG LIG A1685       7.603   3.406   6.284  1.00 25.81           C  
+HETATM    7  CAH LIG A1685      15.159   4.322   6.718  1.00 22.26           C  
+HETATM    8  CAI LIG A1685       9.830   3.596   5.203  1.00 24.73           C  
+HETATM    9  CAJ LIG A1685       8.667   3.145   7.349  1.00 25.62           C  
+HETATM   10  CAK LIG A1685      11.921   0.248   5.186  1.00 23.71           C  
+HETATM   11  CAL LIG A1685      12.796  -0.006   3.192  1.00 24.62           C  
+HETATM   12  CAV LIG A1685       8.601   5.276   7.393  1.00 24.27           C  
+HETATM   13  CAW LIG A1685      12.822   1.026   4.322  1.00 23.33           C  
+HETATM   14  CAX LIG A1685      14.344   2.660   5.047  1.00 23.26           C  
+HETATM   15  CAY LIG A1685      13.088   3.235   6.423  1.00 23.01           C  
+HETATM   16  CAZ LIG A1685      10.578   3.680   6.450  1.00 24.92           C  
+HETATM   17  NAM LIG A1685      15.281   3.129   5.867  1.00 22.91           N  
+HETATM   18  NAN LIG A1685      13.927   3.988   7.091  1.00 23.94           N  
+HETATM   19  NAO LIG A1685      13.124   3.310   5.060  1.00 22.07           N  
+HETATM   20  NAP LIG A1685       8.146   5.705   8.686  1.00 23.00           N  
+HETATM   21  NAQ LIG A1685      14.163   1.279   4.871  1.00 22.75           N  
+HETATM   22  NAR LIG A1685      11.818   2.674   6.407  1.00 24.12           N  
+HETATM   23  OAE LIG A1685       9.066   6.450   6.763  1.00 25.40           O  
+HETATM   24  OAS LIG A1685       9.494   0.667   5.577  1.00 25.37           O  
+HETATM   25  OAT LIG A1685      10.534   0.398   2.348  1.00 26.40           O  
+HETATM   26  OAU LIG A1685       9.112  -0.941   3.539  1.00 28.45           O  
+HETATM   27  CBA LIG A1685      10.498   0.124   4.987  1.00 25.46           C  
+HETATM   28  CBB LIG A1685      11.440  -0.473   2.838  1.00 25.23           C  
+HETATM   29  CBC LIG A1685       9.747   4.329   7.408  1.00 24.96           C  
+HETATM   30  CBD LIG A1685      10.425  -0.798   3.831  1.00 26.00           C  
+HETATM   31  H1  UNL     1       6.328   5.296   9.715  1.00  0.00           H  
+HETATM   32  H2  UNL     1       6.137   6.174   8.160  1.00  0.00           H  
+HETATM   33  H3  UNL     1       6.531   4.421   8.160  1.00  0.00           H  
+HETATM   34  H4  UNL     1       8.496   0.287   7.251  1.00  0.00           H  
+HETATM   35  H5  UNL     1       7.540   0.885   5.852  1.00  0.00           H  
+HETATM   36  H6  UNL     1       8.178  -0.794   5.852  1.00  0.00           H  
+HETATM   37  H7  UNL     1      10.446   1.113   4.233  1.00  0.00           H  
+HETATM   38  H8  UNL     1      11.220   2.177   3.010  1.00  0.00           H  
+HETATM   39  H9  UNL     1       9.437   1.957   3.010  1.00  0.00           H  
+HETATM   40  H10 UNL     1       7.936   0.255   4.663  1.00  0.00           H  
+HETATM   41  H11 UNL     1       8.521   0.942   3.109  1.00  0.00           H  
+HETATM   42  H12 UNL     1       7.240  -0.317   3.109  1.00  0.00           H  
+HETATM   43  H13 UNL     1       8.114   2.784   4.321  1.00  0.00           H  
+HETATM   44  H14 UNL     1       8.104   4.588   4.617  1.00  0.00           H  
+HETATM   45  H15 UNL     1       7.025   4.310   6.526  1.00  0.00           H  
+HETATM   46  H16 UNL     1       6.878   2.583   6.209  1.00  0.00           H  
+HETATM   47  H17 UNL     1      15.880   4.348   7.548  1.00  0.00           H  
+HETATM   48  H18 UNL     1      15.339   5.316   6.281  1.00  0.00           H  
+HETATM   49  H19 UNL     1      10.168   2.657   4.739  1.00  0.00           H  
+HETATM   50  H20 UNL     1      10.046   4.602   4.815  1.00  0.00           H  
+HETATM   51  H21 UNL     1       8.176   3.060   8.330  1.00  0.00           H  
+HETATM   52  H22 UNL     1       9.191   2.213   7.091  1.00  0.00           H  
+HETATM   53  H23 UNL     1      12.312  -0.780   5.170  1.00  0.00           H  
+HETATM   54  H24 UNL     1      11.944   0.858   6.101  1.00  0.00           H  
+HETATM   55  H25 UNL     1      13.251   0.446   2.298  1.00  0.00           H  
+HETATM   56  H26 UNL     1      13.352  -0.885   3.550  1.00  0.00           H  
+HETATM   57  H27 UNL     1       7.769   4.751   6.900  1.00  0.00           H  
+HETATM   58  H28 UNL     1      12.538   2.065   4.097  1.00  0.00           H  
+HETATM   59  H29 UNL     1      14.899   2.950   4.142  1.00  0.00           H  
+HETATM   60  H30 UNL     1      13.542   2.823   7.336  1.00  0.00           H  
+HETATM   61  H31 UNL     1      11.366   4.248   6.967  1.00  0.00           H  
+HETATM   62  H32 UNL     1      16.102   3.304   5.270  1.00  0.00           H  
+HETATM   63  H33 UNL     1      14.040   3.520   8.001  1.00  0.00           H  
+HETATM   64  H34 UNL     1      13.158   4.272   4.694  1.00  0.00           H  
+HETATM   65  H35 UNL     1       8.294   6.717   8.809  1.00  0.00           H  
+HETATM   66  H36 UNL     1      14.257   0.802   5.779  1.00  0.00           H  
+HETATM   67  H37 UNL     1      11.736   2.117   5.545  1.00  0.00           H  
+HETATM   68  H38 UNL     1       9.328   7.112   7.451  1.00  0.00           H  
+HETATM   69  H39 UNL     1      10.471  -0.708   5.707  1.00  0.00           H  
+HETATM   70  H40 UNL     1      11.920  -1.262   2.241  1.00  0.00           H  
+HETATM   71  H41 UNL     1      10.503   4.819   8.040  1.00  0.00           H  
+HETATM   72  H42 UNL     1      10.740  -1.839   3.996  1.00  0.00           H  
+CONECT    1   20   31   32   33
+CONECT    2   24   34   35   36
+CONECT    3   25   37   38   39
+CONECT    4   26   40   41   42
+CONECT    5    6    8   43   44
+CONECT    6    9   45   46
+CONECT    7   17   18   47   48
+CONECT    8   16   49   50
+CONECT    9   29   51   52
+CONECT   10   13   27   53   54
+CONECT   11   13   28   55   56
+CONECT   12   20   23   29   57
+CONECT   13   21   58
+CONECT   14   17   19   21   59
+CONECT   15   18   19   22   60
+CONECT   16   22   29   61
+CONECT   17   62
+CONECT   18   63
+CONECT   19   64
+CONECT   20   65
+CONECT   21   66
+CONECT   22   67
+CONECT   23   68
+CONECT   24   27
+CONECT   25   28
+CONECT   26   30
+CONECT   27   30   69
+CONECT   28   30   70
+CONECT   29   71
+CONECT   30   72
+END

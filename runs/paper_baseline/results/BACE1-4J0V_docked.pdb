@@ -1,0 +1,66 @@
+COMPND    /data/masters/datasets/disco/data/BACE1/PDB_Structures/4J0V_LIG.pdb
+HETATM    1  C1  UNL     1      27.528  12.296  23.371  1.00  0.00           C  
+HETATM    2  C2  UNL     1      26.521  13.257  23.638  1.00  0.00           C  
+HETATM    3  C3  UNL     1      25.422  13.035  22.797  1.00  0.00           C  
+HETATM    4  C4  UNL     1      25.549  11.824  22.193  1.00  0.00           C  
+HETATM    5  N1  UNL     1      25.787  10.860  23.125  1.00  0.00           N  
+HETATM    6  C5  UNL     1      27.009  11.032  23.552  1.00  0.00           C  
+HETATM    7  C6  UNL     1      26.286  12.116  20.936  1.00  0.00           C  
+HETATM    8  N2  UNL     1      27.260  11.074  20.706  1.00  0.00           N  
+HETATM    9  O1  UNL     1      26.212  13.055  20.181  1.00  0.00           O  
+HETATM   10  C7  UNL     1      28.874  12.588  22.840  1.00  0.00           C  
+HETATM   11  N3  UNL     1      29.162  13.343  21.893  1.00  0.00           N  
+HETATM   12  C8  UNL     1      26.468  10.158  19.848  1.00  0.00           C  
+HETATM   13  C9  UNL     1      26.496  10.858  18.724  1.00  0.00           C  
+HETATM   14  C10 UNL     1      25.232  10.746  18.104  1.00  0.00           C  
+HETATM   15  C11 UNL     1      24.267  11.119  18.920  1.00  0.00           C  
+HETATM   16  C12 UNL     1      24.233  10.318  20.072  1.00  0.00           C  
+HETATM   17  C13 UNL     1      25.295   9.743  20.586  1.00  0.00           C  
+HETATM   18  C14 UNL     1      23.045  10.561  20.849  1.00  0.00           C  
+HETATM   19  C15 UNL     1      22.081   9.953  19.803  1.00  0.00           C  
+HETATM   20  C16 UNL     1      22.404  12.249  22.545  1.00  0.00           C  
+HETATM   21  O2  UNL     1      22.928  11.422  23.644  1.00  0.00           O  
+HETATM   22  C17 UNL     1      23.044  10.073  23.236  1.00  0.00           C  
+HETATM   23  N4  UNL     1      23.042   9.799  22.049  1.00  0.00           N  
+HETATM   24  N5  UNL     1      22.952   9.384  24.488  1.00  0.00           N  
+HETATM   25  C18 UNL     1      22.870  11.950  21.012  1.00  0.00           C  
+HETATM   26  F1  UNL     1      23.198  13.141  20.631  1.00  0.00           F  
+HETATM   27  F2  UNL     1      23.169  11.736  18.503  1.00  0.00           F  
+HETATM   28  H1  UNL     1      26.591  14.055  24.392  1.00  0.00           H  
+HETATM   29  H2  UNL     1      24.585  13.733  22.648  1.00  0.00           H  
+HETATM   30  H3  UNL     1      27.585  10.223  24.024  1.00  0.00           H  
+HETATM   31  H4  UNL     1      28.230  10.990  21.042  1.00  0.00           H  
+HETATM   32  H5  UNL     1      27.355  11.427  18.340  1.00  0.00           H  
+HETATM   33  H6  UNL     1      25.074  10.394  17.074  1.00  0.00           H  
+HETATM   34  H7  UNL     1      25.294   9.054  21.444  1.00  0.00           H  
+HETATM   35  H8  UNL     1      21.259   9.436  20.320  1.00  0.00           H  
+HETATM   36  H9  UNL     1      21.670  10.756  19.173  1.00  0.00           H  
+HETATM   37  H10 UNL     1      22.627   9.236  19.173  1.00  0.00           H  
+HETATM   38  H11 UNL     1      21.308  12.154  22.569  1.00  0.00           H  
+HETATM   39  H12 UNL     1      22.827  13.244  22.751  1.00  0.00           H  
+HETATM   40  H13 UNL     1      23.006   8.356  24.515  1.00  0.00           H  
+HETATM   41  H14 UNL     1      22.833   9.916  25.362  1.00  0.00           H  
+HETATM   42  H15 UNL     1      22.685  11.713  19.954  1.00  0.00           H  
+CONECT    1    2    2    6   10
+CONECT    2    3   28
+CONECT    3    4    4   29
+CONECT    4    5    7
+CONECT    5    6    6
+CONECT    6   30
+CONECT    7    8    9    9
+CONECT    8   12   31
+CONECT   10   11   11   11
+CONECT   12   13   13   17
+CONECT   13   14   32
+CONECT   14   15   15   33
+CONECT   15   16   27
+CONECT   16   17   17   18
+CONECT   17   34
+CONECT   18   19   23   25
+CONECT   19   35   36   37
+CONECT   20   21   25   38   39
+CONECT   21   22
+CONECT   22   23   23   24
+CONECT   24   40   41
+CONECT   25   26   42
+END

@@ -1,0 +1,31 @@
+COMPND    /data/masters/datasets/disco/data/PARP1/PDB_Structures/4GV7_LIG.pdb
+HETATM    1  C1  UNL     1      24.455   9.400  26.174  1.00  0.00           C  
+HETATM    2  C2  UNL     1      24.292   8.314  25.322  1.00  0.00           C  
+HETATM    3  C3  UNL     1      25.137  10.443  25.548  1.00  0.00           C  
+HETATM    4  C4  UNL     1      23.695   8.615  24.146  1.00  0.00           C  
+HETATM    5  C5  UNL     1      23.691  13.460  22.488  1.00  0.00           C  
+HETATM    6  C6  UNL     1      24.198  12.161  22.714  1.00  0.00           C  
+HETATM    7  C7  UNL     1      23.015  10.318  22.736  1.00  0.00           C  
+HETATM    8  C8  UNL     1      24.924  10.562  24.212  1.00  0.00           C  
+HETATM    9  C9  UNL     1      23.853   9.843  23.680  1.00  0.00           C  
+HETATM   10  N1  UNL     1      25.076  11.676  23.577  1.00  0.00           N  
+HETATM   11  N2  UNL     1      23.527  11.282  21.977  1.00  0.00           N  
+HETATM   12  O1  UNL     1      22.083   9.745  22.164  1.00  0.00           O  
+HETATM   13  H1  UNL     1      24.093   9.433  27.212  1.00  0.00           H  
+HETATM   14  H2  UNL     1      24.620   7.297  25.582  1.00  0.00           H  
+HETATM   15  H3  UNL     1      25.803  11.123  26.099  1.00  0.00           H  
+HETATM   16  H4  UNL     1      23.101   7.868  23.599  1.00  0.00           H  
+HETATM   17  H5  UNL     1      23.499  13.951  23.453  1.00  0.00           H  
+HETATM   18  H6  UNL     1      24.426  14.046  21.917  1.00  0.00           H  
+HETATM   19  H7  UNL     1      22.753  13.392  21.917  1.00  0.00           H  
+HETATM   20  H8  UNL     1      23.417  11.340  20.954  1.00  0.00           H  
+CONECT    1    2    2    3   13
+CONECT    2    4   14
+CONECT    3    8    8   15
+CONECT    4    9    9   16
+CONECT    5    6   17   18   19
+CONECT    6   10   10   11
+CONECT    7    9   11   12   12
+CONECT    8    9   10
+CONECT   11   20
+END

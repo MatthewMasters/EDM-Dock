@@ -1,0 +1,27 @@
+COMPND    /data/masters/datasets/disco/data/JAK2/PDB_Structures/3E62_LIG.pdb
+HETATM    1  C1  UNL     1     117.860  67.483  10.167  1.00  0.00           C  
+HETATM    2  N1  UNL     1     116.620  67.709  10.861  1.00  0.00           N  
+HETATM    3  C2  UNL     1     118.875  66.774   8.253  1.00  0.00           C  
+HETATM    4  N2  UNL     1     118.985  67.994  10.157  1.00  0.00           N  
+HETATM    5  C3  UNL     1     119.230  66.125   7.006  1.00  0.00           C  
+HETATM    6  N3  UNL     1     119.603  67.569   8.988  1.00  0.00           N  
+HETATM    7  C4  UNL     1     118.369  64.992   6.354  1.00  0.00           C  
+HETATM    8  C5  UNL     1     117.199  64.855   6.998  1.00  0.00           C  
+HETATM    9  C6  UNL     1     116.959  65.642   8.254  1.00  0.00           C  
+HETATM   10  C7  UNL     1     117.578  66.650   8.934  1.00  0.00           C  
+HETATM   11 BR1  UNL     1     116.742  63.397   5.974  1.00  0.00          BR  
+HETATM   12  H1  UNL     1     115.805  67.108  10.669  1.00  0.00           H  
+HETATM   13  H2  UNL     1     116.547  68.471  11.550  1.00  0.00           H  
+HETATM   14  H3  UNL     1     119.294  66.927   6.255  1.00  0.00           H  
+HETATM   15  H4  UNL     1     120.134  65.571   7.299  1.00  0.00           H  
+HETATM   16  H5  UNL     1     118.679  64.391   5.486  1.00  0.00           H  
+HETATM   17  H6  UNL     1     116.039  65.320   8.762  1.00  0.00           H  
+CONECT    1    2    4    4   10
+CONECT    2   12   13
+CONECT    3    5    6    6   10
+CONECT    4    6
+CONECT    5    7   14   15
+CONECT    7    8    8   16
+CONECT    8    9   11
+CONECT    9   10   10   17
+END

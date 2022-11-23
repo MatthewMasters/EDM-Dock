@@ -1,0 +1,27 @@
+COMPND    /data/masters/datasets/disco/data/CASP3/PDB_Structures/2XYH_LIG.pdb
+HETATM    1  C1  UNL     1      32.871  32.059  30.580  1.00  0.00           C  
+HETATM    2  O1  UNL     1      33.966  30.834  28.976  1.00  0.00           O  
+HETATM    3  C2  UNL     1      35.199  30.335  28.736  1.00  0.00           C  
+HETATM    4  C3  UNL     1      36.046  31.430  28.279  1.00  0.00           C  
+HETATM    5  O2  UNL     1      37.186  31.095  27.901  1.00  0.00           O  
+HETATM    6  O3  UNL     1      35.485  32.357  27.452  1.00  0.00           O  
+HETATM    7  C4  UNL     1      35.192  32.532  30.187  1.00  0.00           C  
+HETATM    8  C5  UNL     1      33.928  32.121  29.484  1.00  0.00           C  
+HETATM    9  H1  UNL     1      33.361  32.088  31.564  1.00  0.00           H  
+HETATM   10  H2  UNL     1      32.191  32.919  30.483  1.00  0.00           H  
+HETATM   11  H3  UNL     1      32.297  31.125  30.483  1.00  0.00           H  
+HETATM   12  H4  UNL     1      35.613  29.902  29.659  1.00  0.00           H  
+HETATM   13  H5  UNL     1      35.151  29.544  27.972  1.00  0.00           H  
+HETATM   14  H6  UNL     1      36.027  33.116  27.120  1.00  0.00           H  
+HETATM   15  H7  UNL     1      35.039  32.482  31.276  1.00  0.00           H  
+HETATM   16  H8  UNL     1      36.008  31.853  29.901  1.00  0.00           H  
+HETATM   17  H9  UNL     1      35.453  33.561  29.901  1.00  0.00           H  
+HETATM   18  H10 UNL     1      33.752  32.824  28.657  1.00  0.00           H  
+CONECT    1    8    9   10   11
+CONECT    2    3    8
+CONECT    3    4   12   13
+CONECT    4    5    5    6
+CONECT    6   14
+CONECT    7    8   15   16   17
+CONECT    8   18
+END

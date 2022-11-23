@@ -1,0 +1,30 @@
+COMPND    /data/masters/datasets/disco/data/AMPC/PDB_Structures/2HDR_LIG.pdb
+HETATM    1  N1  UNL     1      80.541   5.741  34.555  1.00  0.00           N  
+HETATM    2  C1  UNL     1      81.822   5.716  35.196  1.00  0.00           C  
+HETATM    3  C2  UNL     1      82.915   5.994  34.421  1.00  0.00           C  
+HETATM    4  C3  UNL     1      84.151   5.670  34.918  1.00  0.00           C  
+HETATM    5  C4  UNL     1      84.274   4.732  35.913  1.00  0.00           C  
+HETATM    6  C5  UNL     1      83.129   4.280  36.505  1.00  0.00           C  
+HETATM    7  C6  UNL     1      82.038   5.155  36.452  1.00  0.00           C  
+HETATM    8  C7  UNL     1      85.563   4.427  36.573  1.00  0.00           C  
+HETATM    9  O1  UNL     1      80.868   4.831  37.154  1.00  0.00           O  
+HETATM   10  O2  UNL     1      86.391   5.383  36.479  1.00  0.00           O  
+HETATM   11  O3  UNL     1      85.587   3.818  37.839  1.00  0.00           O  
+HETATM   12  H1  UNL     1      79.689   5.539  35.097  1.00  0.00           H  
+HETATM   13  H2  UNL     1      80.472   5.962  33.551  1.00  0.00           H  
+HETATM   14  H3  UNL     1      82.806   6.462  33.432  1.00  0.00           H  
+HETATM   15  H4  UNL     1      85.049   6.163  34.517  1.00  0.00           H  
+HETATM   16  H5  UNL     1      83.069   3.294  36.990  1.00  0.00           H  
+HETATM   17  H6  UNL     1      80.927   4.428  38.056  1.00  0.00           H  
+HETATM   18  H7  UNL     1      86.453   3.616  38.275  1.00  0.00           H  
+CONECT    1    2   12   13
+CONECT    2    3    3    7
+CONECT    3    4   14
+CONECT    4    5    5   15
+CONECT    5    6    8
+CONECT    6    7    7   16
+CONECT    7    9
+CONECT    8   10   10   11
+CONECT    9   17
+CONECT   11   18
+END

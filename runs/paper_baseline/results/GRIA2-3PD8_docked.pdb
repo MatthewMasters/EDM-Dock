@@ -1,0 +1,33 @@
+COMPND    /data/masters/datasets/disco/data/GRIA2/PDB_Structures/3PD8_LIG.pdb
+HETATM    1  C1  UNL     1       7.901  33.471  -3.526  1.00  0.00           C  
+HETATM    2  N1  UNL     1       7.624  32.174  -3.457  1.00  0.00           N  
+HETATM    3  O1  UNL     1       7.859  31.639  -2.271  1.00  0.00           O  
+HETATM    4  C2  UNL     1       7.988  33.733  -2.215  1.00  0.00           C  
+HETATM    5  N2  UNL     1       8.387  33.501   0.374  1.00  0.00           N  
+HETATM    6  O2  UNL     1      10.609  31.673  -1.830  1.00  0.00           O  
+HETATM    7  C3  UNL     1       8.055  34.992  -1.410  1.00  0.00           C  
+HETATM    8  O3  UNL     1      10.428  33.725  -2.516  1.00  0.00           O  
+HETATM    9  C4  UNL     1       7.398  34.477  -0.117  1.00  0.00           C  
+HETATM   10  O4  UNL     1       7.414  34.167  -4.472  1.00  0.00           O  
+HETATM   11  C5  UNL     1       9.125  32.761  -0.519  1.00  0.00           C  
+HETATM   12  C6  UNL     1       7.988  32.591  -1.373  1.00  0.00           C  
+HETATM   13  C7  UNL     1      10.287  32.868  -1.416  1.00  0.00           C  
+HETATM   14  H1  UNL     1       7.260  31.634  -4.254  1.00  0.00           H  
+HETATM   15  H2  UNL     1       9.059  34.025   0.953  1.00  0.00           H  
+HETATM   16  H3  UNL     1       9.092  35.322  -1.244  1.00  0.00           H  
+HETATM   17  H4  UNL     1       7.583  35.874  -1.866  1.00  0.00           H  
+HETATM   18  H5  UNL     1      10.232  34.691  -2.419  1.00  0.00           H  
+HETATM   19  H6  UNL     1       6.432  33.993  -0.328  1.00  0.00           H  
+HETATM   20  H7  UNL     1       7.168  35.273   0.606  1.00  0.00           H  
+HETATM   21  H8  UNL     1       9.773  32.172   0.146  1.00  0.00           H  
+CONECT    1    2    4   10   10
+CONECT    2    3   14
+CONECT    3   12
+CONECT    4    7   12   12
+CONECT    5    9   11   15
+CONECT    6   13   13
+CONECT    7    9   16   17
+CONECT    8   13   18
+CONECT    9   19   20
+CONECT   11   12   13   21
+END

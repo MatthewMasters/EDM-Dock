@@ -1,0 +1,34 @@
+COMPND    /data/masters/datasets/disco/data/MP2K1/PDB_Structures/3ZLS_LIG.pdb
+HETATM    1  C1  UNL     1      -5.598  70.940  34.210  1.00  0.00           C  
+HETATM    2  C2  UNL     1      -4.613  71.878  34.181  1.00  0.00           C  
+HETATM    3  N1  UNL     1      -3.308  71.376  34.374  1.00  0.00           N  
+HETATM    4  C3  UNL     1      -5.253  69.487  34.634  1.00  0.00           C  
+HETATM    5  N2  UNL     1      -1.826  69.514  34.378  1.00  0.00           N  
+HETATM    6  C4  UNL     1      -2.222  68.358  34.557  1.00  0.00           C  
+HETATM    7  C5  UNL     1      -3.629  67.930  34.625  1.00  0.00           C  
+HETATM    8  C6  UNL     1      -4.043  69.048  34.122  1.00  0.00           C  
+HETATM    9  C7  UNL     1      -3.051  70.095  34.498  1.00  0.00           C  
+HETATM   10  C8  UNL     1      -4.010  66.475  34.873  1.00  0.00           C  
+HETATM   11  O1  UNL     1      -5.170  66.462  35.418  1.00  0.00           O  
+HETATM   12  O2  UNL     1      -3.890  65.433  33.965  1.00  0.00           O  
+HETATM   13  C9  UNL     1      -4.407  64.103  34.186  1.00  0.00           C  
+HETATM   14  H1  UNL     1      -6.629  71.209  33.937  1.00  0.00           H  
+HETATM   15  H2  UNL     1      -4.818  72.947  34.019  1.00  0.00           H  
+HETATM   16  H3  UNL     1      -5.206  69.443  35.732  1.00  0.00           H  
+HETATM   17  H4  UNL     1      -6.039  68.831  34.230  1.00  0.00           H  
+HETATM   18  H5  UNL     1      -1.455  67.579  34.677  1.00  0.00           H  
+HETATM   19  H6  UNL     1      -4.480  63.914  35.268  1.00  0.00           H  
+HETATM   20  H7  UNL     1      -5.404  64.016  33.730  1.00  0.00           H  
+HETATM   21  H8  UNL     1      -3.730  63.366  33.730  1.00  0.00           H  
+CONECT    1    2    2    4   14
+CONECT    2    3   15
+CONECT    3    9    9
+CONECT    4    8   16   17
+CONECT    5    6    6    9
+CONECT    6    7   18
+CONECT    7    8    8   10
+CONECT    8    9
+CONECT   10   11   11   12
+CONECT   12   13
+CONECT   13   19   20   21
+END

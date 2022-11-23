@@ -1,0 +1,29 @@
+COMPND    /data/masters/datasets/disco/data/CDK2/PDB_Structures/3QQG_LIG.pdb
+HETATM    1 CL1  UNL     1      -1.285  28.780  12.536  1.00  0.00          CL  
+HETATM    2  N1  UNL     1       1.424  28.916   8.599  1.00  0.00           N  
+HETATM    3  N2  UNL     1       2.915  29.118   6.812  1.00  0.00           N1-
+HETATM    4  N3  UNL     1       1.697  30.889   7.532  1.00  0.00           N1-
+HETATM    5  N4  UNL     1       2.973  27.370   8.193  1.00  0.00           N1+
+HETATM    6  N5  UNL     1       3.828  31.091   6.444  1.00  0.00           N1+
+HETATM    7  C1  UNL     1      -1.259  29.861  11.192  1.00  0.00           C  
+HETATM    8  C2  UNL     1      -1.741  31.189  11.099  1.00  0.00           C  
+HETATM    9  C3  UNL     1      -1.484  31.995   9.962  1.00  0.00           C  
+HETATM   10  C4  UNL     1      -0.433  31.734   9.077  1.00  0.00           C  
+HETATM   11  C5  UNL     1      -0.130  30.460   9.137  1.00  0.00           C  
+HETATM   12  C6  UNL     1      -0.845  29.497   9.900  1.00  0.00           C  
+HETATM   13  C7  UNL     1       0.944  30.074   8.246  1.00  0.00           C  
+HETATM   14  C8  UNL     1       2.510  28.634   8.012  1.00  0.00           C  
+HETATM   15  C9  UNL     1       2.779  30.475   6.918  1.00  0.00           C  
+HETATM   16  O1  UNL     1       0.325  32.504   8.257  1.00  0.00           O1-
+CONECT    1    7
+CONECT    2   13   13   14
+CONECT    3   14   15
+CONECT    4   13   15
+CONECT    5   14   14
+CONECT    6   15   15
+CONECT    7    8    8   12
+CONECT    8    9
+CONECT    9   10   10
+CONECT   10   11   16
+CONECT   11   12   12   13
+END

@@ -1,0 +1,31 @@
+COMPND    /data/masters/datasets/disco/data/AMPC/PDB_Structures/3GV9_LIG.pdb
+HETATM    1  S1  UNL     1      82.651   6.678  29.277  1.00  0.00           S  
+HETATM    2  C1  UNL     1      81.016   6.152  29.713  1.00  0.00           C  
+HETATM    3  C2  UNL     1      81.059   5.824  31.111  1.00  0.00           C  
+HETATM    4  C3  UNL     1      82.319   6.348  31.483  1.00  0.00           C  
+HETATM    5  C4  UNL     1      83.164   5.606  30.706  1.00  0.00           C  
+HETATM    6  C5  UNL     1      79.835   6.478  28.921  1.00  0.00           C  
+HETATM    7  O1  UNL     1      79.971   7.360  27.990  1.00  0.00           O  
+HETATM    8  O2  UNL     1      79.180   5.363  28.345  1.00  0.00           O  
+HETATM    9  N1  UNL     1      80.098   5.984  32.178  1.00  0.00           N  
+HETATM   10  C6  UNL     1      80.495   6.241  33.538  1.00  0.00           C  
+HETATM   11  O3  UNL     1      81.682   5.886  33.847  1.00  0.00           O  
+HETATM   12  C7  UNL     1      79.822   7.023  34.601  1.00  0.00           C  
+HETATM   13  H1  UNL     1      82.557   7.142  32.207  1.00  0.00           H  
+HETATM   14  H2  UNL     1      83.844   4.755  30.858  1.00  0.00           H  
+HETATM   15  H3  UNL     1      78.370   5.495  27.792  1.00  0.00           H  
+HETATM   16  H4  UNL     1      79.094   5.912  31.958  1.00  0.00           H  
+HETATM   17  H5  UNL     1      80.141   6.653  35.586  1.00  0.00           H  
+HETATM   18  H6  UNL     1      80.094   8.085  34.502  1.00  0.00           H  
+HETATM   19  H7  UNL     1      78.732   6.914  34.502  1.00  0.00           H  
+CONECT    1    2    5
+CONECT    2    3    3    6
+CONECT    3    4    9
+CONECT    4    5    5   13
+CONECT    5   14
+CONECT    6    7    7    8
+CONECT    8   15
+CONECT    9   10   16
+CONECT   10   11   11   12
+CONECT   12   17   18   19
+END

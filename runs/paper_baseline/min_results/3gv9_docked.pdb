@@ -1,0 +1,32 @@
+COMPND    3gv9_ligand
+HETATM    1  O1  UNL     1     -35.733   4.930  12.362  1.00  0.00           O  
+HETATM    2  C1  UNL     1     -35.598   3.743  12.798  1.00  0.00           C  
+HETATM    3  C2  UNL     1     -35.704   2.685  11.779  1.00  0.00           C  
+HETATM    4  N1  UNL     1     -35.945   3.670  14.165  1.00  0.00           N  
+HETATM    5  C3  UNL     1     -36.835   4.568  14.828  1.00  0.00           C  
+HETATM    6  C4  UNL     1     -37.864   5.303  14.303  1.00  0.00           C  
+HETATM    7  C5  UNL     1     -37.784   6.656  14.625  1.00  0.00           C  
+HETATM    8  S1  UNL     1     -37.137   6.509  16.233  1.00  0.00           S  
+HETATM    9  C6  UNL     1     -36.671   4.842  16.184  1.00  0.00           C  
+HETATM   10  C7  UNL     1     -36.541   3.987  17.344  1.00  0.00           C  
+HETATM   11  O2  UNL     1     -37.407   4.191  18.267  1.00  0.00           O  
+HETATM   12  O3  UNL     1     -35.277   3.960  17.977  1.00  0.00           O  
+HETATM   13  H1  UNL     1     -35.802   1.707  12.274  1.00  0.00           H  
+HETATM   14  H2  UNL     1     -36.588   2.868  11.150  1.00  0.00           H  
+HETATM   15  H3  UNL     1     -34.801   2.689  11.150  1.00  0.00           H  
+HETATM   16  H4  UNL     1     -35.525   2.913  14.724  1.00  0.00           H  
+HETATM   17  H5  UNL     1     -38.669   4.871  13.690  1.00  0.00           H  
+HETATM   18  H6  UNL     1     -38.049   7.548  14.039  1.00  0.00           H  
+HETATM   19  H7  UNL     1     -35.135   3.392  18.775  1.00  0.00           H  
+CONECT    1    2    2
+CONECT    2    3    4
+CONECT    3   13   14   15
+CONECT    4    5   16
+CONECT    5    6    9    9
+CONECT    6    7    7   17
+CONECT    7    8   18
+CONECT    8    9
+CONECT    9   10
+CONECT   10   11   11   12
+CONECT   12   19
+END

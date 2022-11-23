@@ -1,0 +1,124 @@
+HETATM    1  CAI LIG A1687       6.460   1.855   5.971  1.00 30.47           C  
+HETATM    2  CAK LIG A1687       9.472   3.913   6.767  1.00 22.90           C  
+HETATM    3  CAM LIG A1687      12.366  -0.020   3.978  1.00 19.03           C  
+HETATM    4  CAN LIG A1687       7.317   1.060   6.725  1.00 31.45           C  
+HETATM    5  CAQ LIG A1687       8.692   3.109   5.889  1.00 25.67           C  
+HETATM    6  CAR LIG A1687       9.063   4.700   7.911  1.00 24.12           C  
+HETATM    7  CAS LIG A1687      11.063   0.149   4.582  1.00 18.54           C  
+HETATM    8  CAT LIG A1687      12.296  -0.796   2.768  1.00 18.75           C  
+HETATM    9  CAV LIG A1687      11.037   0.966   2.394  1.00 15.80           C  
+HETATM   10  CAW LIG A1687       8.591   1.475   7.286  1.00 33.15           C  
+HETATM   11  CAY LIG A1687       7.740   4.226   5.365  1.00 24.59           C  
+HETATM   12  CAZ LIG A1687       7.538   4.596   7.944  1.00 24.72           C  
+HETATM   13  NAE LIG A1687      10.548   4.469   6.066  1.00 19.80           N  
+HETATM   14  NAH LIG A1687      13.110   1.071   4.405  1.00 18.21           N  
+HETATM   15  NAO LIG A1687       8.170   0.216   5.820  1.00 30.06           N  
+HETATM   16  OAJ LIG A1687       8.480   1.603   4.014  1.00 29.76           O  
+HETATM   17  OAU LIG A1687      11.839   0.036   1.795  1.00 18.56           O  
+HETATM   18  OAX LIG A1687       8.473   1.614   4.005  1.00 28.19           O  
+HETATM   19  SAP LIG A1687       8.588   1.899   4.834  1.00 27.43           S  
+HETATM   20  CBA LIG A1687      10.121  -0.820   4.174  1.00 18.63           C  
+HETATM   21  CBB LIG A1687      11.020  -1.584   2.433  1.00 19.15           C  
+HETATM   22  CBC LIG A1687       7.133   4.797   6.555  1.00 23.31           C  
+HETATM   23  CBD LIG A1687       9.785  -0.927   2.690  1.00 19.85           C  
+HETATM   24  CBF LIG A1687       7.904  -1.068   1.477  1.00 21.86           C  
+HETATM   25  CBG LIG A1687       7.853  -1.375   3.625  1.00 22.65           C  
+HETATM   26  CBH LIG A1687       6.861  -0.246   2.067  1.00 24.13           C  
+HETATM   27  CBI LIG A1687       6.562  -0.770   3.370  1.00 25.38           C  
+HETATM   28  CBK LIG A1687       5.097  -1.046   4.931  1.00 30.42           C  
+HETATM   29  NBE LIG A1687       8.651  -1.679   2.483  1.00 20.49           N  
+HETATM   30  NBJ LIG A1687       5.773  -0.002   4.106  1.00 28.95           N  
+HETATM   31 CL5  LIG A1687      12.761   5.285   7.057  1.00 18.01          CL  
+HETATM   32  N1  LIG A1687      12.766   3.324   4.574  1.00 17.06           N  
+HETATM   33  C2  LIG A1687      12.146   2.098   4.593  1.00 17.82           C  
+HETATM   34  N3  LIG A1687      11.235   2.134   5.656  1.00 17.67           N  
+HETATM   35  C4  LIG A1687      11.344   3.320   6.410  1.00 18.06           C  
+HETATM   36  C5  LIG A1687      12.709   3.764   6.425  1.00 17.54           C  
+HETATM   37  C6  LIG A1687      13.521   2.860   5.762  1.00 16.38           C  
+HETATM   38  H1  UNL     1       5.822   2.447   6.644  1.00  0.00           H  
+HETATM   39  H2  UNL     1       7.051   2.532   5.337  1.00  0.00           H  
+HETATM   40  H3  UNL     1       5.830   1.215   5.337  1.00  0.00           H  
+HETATM   41  H4  UNL     1       9.607   3.090   7.484  1.00  0.00           H  
+HETATM   42  H5  UNL     1      13.174  -0.731   4.202  1.00  0.00           H  
+HETATM   43  H6  UNL     1       6.532   0.781   7.443  1.00  0.00           H  
+HETATM   44  H7  UNL     1       8.905   2.229   6.513  1.00  0.00           H  
+HETATM   45  H8  UNL     1       9.498   4.293   8.835  1.00  0.00           H  
+HETATM   46  H9  UNL     1       9.402   5.744   7.834  1.00  0.00           H  
+HETATM   47  H10 UNL     1      11.176   0.086   5.674  1.00  0.00           H  
+HETATM   48  H11 UNL     1      10.681   1.128   4.257  1.00  0.00           H  
+HETATM   49  H12 UNL     1      13.249  -1.340   2.847  1.00  0.00           H  
+HETATM   50  H13 UNL     1      11.119   0.871   3.487  1.00  0.00           H  
+HETATM   51  H14 UNL     1      11.353   1.974   2.089  1.00  0.00           H  
+HETATM   52  H15 UNL     1       9.993   0.801   2.089  1.00  0.00           H  
+HETATM   53  H16 UNL     1       8.532   1.456   8.384  1.00  0.00           H  
+HETATM   54  H17 UNL     1       9.381   0.788   6.949  1.00  0.00           H  
+HETATM   55  H18 UNL     1       8.825   2.496   6.949  1.00  0.00           H  
+HETATM   56  H19 UNL     1       8.308   4.991   4.816  1.00  0.00           H  
+HETATM   57  H20 UNL     1       6.986   3.830   4.668  1.00  0.00           H  
+HETATM   58  H21 UNL     1       7.223   3.605   8.302  1.00  0.00           H  
+HETATM   59  H22 UNL     1       7.081   5.328   8.625  1.00  0.00           H  
+HETATM   60  H23 UNL     1      10.382   4.581   5.055  1.00  0.00           H  
+HETATM   61  H24 UNL     1      13.595   0.859   5.289  1.00  0.00           H  
+HETATM   62  H25 UNL     1       8.978  -0.229   6.278  1.00  0.00           H  
+HETATM   63  H26 UNL     1       8.143   0.673   4.041  1.00  0.00           H  
+HETATM   64  H27 UNL     1       8.104   0.695   4.020  1.00  0.00           H  
+HETATM   65  H28 UNL     1      10.505  -1.801   4.491  1.00  0.00           H  
+HETATM   66  H29 UNL     1       9.180  -0.495   4.641  1.00  0.00           H  
+HETATM   67  H30 UNL     1      11.051  -1.832   1.361  1.00  0.00           H  
+HETATM   68  H31 UNL     1      11.031  -2.457   3.102  1.00  0.00           H  
+HETATM   69  H32 UNL     1       7.184   5.885   6.402  1.00  0.00           H  
+HETATM   70  H33 UNL     1       6.197   4.219   6.564  1.00  0.00           H  
+HETATM   71  H34 UNL     1       9.535  -0.042   2.086  1.00  0.00           H  
+HETATM   72  H35 UNL     1       7.446  -1.840   0.843  1.00  0.00           H  
+HETATM   73  H36 UNL     1       8.566  -0.433   0.870  1.00  0.00           H  
+HETATM   74  H37 UNL     1       8.427  -0.683   4.259  1.00  0.00           H  
+HETATM   75  H38 UNL     1       7.632  -2.346   4.093  1.00  0.00           H  
+HETATM   76  H39 UNL     1       7.210   0.794   2.154  1.00  0.00           H  
+HETATM   77  H40 UNL     1       5.961  -0.261   1.435  1.00  0.00           H  
+HETATM   78  H41 UNL     1       5.824  -1.544   3.628  1.00  0.00           H  
+HETATM   79  H42 UNL     1       5.242  -0.821   5.998  1.00  0.00           H  
+HETATM   80  H43 UNL     1       4.021  -1.055   4.702  1.00  0.00           H  
+HETATM   81  H44 UNL     1       5.529  -2.031   4.702  1.00  0.00           H  
+HETATM   82  H45 UNL     1       6.312   0.656   4.687  1.00  0.00           H  
+HETATM   83  H46 UNL     1      13.342   3.506   3.739  1.00  0.00           H  
+HETATM   84  H47 UNL     1      11.489   1.829   3.752  1.00  0.00           H  
+HETATM   85  H48 UNL     1      10.279   2.069   5.276  1.00  0.00           H  
+HETATM   86  H49 UNL     1      10.940   2.983   7.375  1.00  0.00           H  
+HETATM   87  H50 UNL     1      13.750   3.889   6.757  1.00  0.00           H  
+HETATM   88  H51 UNL     1      13.377   1.804   6.034  1.00  0.00           H  
+HETATM   89  H52 UNL     1      14.619   2.855   5.830  1.00  0.00           H  
+CONECT    1    4   38   39   40
+CONECT    2    5    6   13   41
+CONECT    3    7    8   14   42
+CONECT    4   10   15   43
+CONECT    5   11   19   44
+CONECT    6   12   45   46
+CONECT    7   20   47   48
+CONECT    8   17   21   49
+CONECT    9   17   50   51   52
+CONECT   10   53   54   55
+CONECT   11   22   56   57
+CONECT   12   22   58   59
+CONECT   13   35   60
+CONECT   14   33   61
+CONECT   15   19   62
+CONECT   16   19   63
+CONECT   18   19   64
+CONECT   20   23   65   66
+CONECT   21   23   67   68
+CONECT   22   69   70
+CONECT   23   29   71
+CONECT   24   26   29   72   73
+CONECT   25   27   29   74   75
+CONECT   26   27   76   77
+CONECT   27   30   78
+CONECT   28   30   79   80   81
+CONECT   30   82
+CONECT   31   36
+CONECT   32   33   37   83
+CONECT   33   34   84
+CONECT   34   35   85
+CONECT   35   36   86
+CONECT   36   37   87
+CONECT   37   88   89
+END

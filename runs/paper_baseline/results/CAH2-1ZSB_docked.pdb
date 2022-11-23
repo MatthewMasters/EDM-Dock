@@ -1,0 +1,30 @@
+COMPND    /data/masters/datasets/disco/data/CAH2/PDB_Structures/1ZSB_LIG.pdb
+HETATM    1  C1  UNL     1      -5.136   2.072  15.825  1.00  0.00           C  
+HETATM    2  N1  UNL     1      -5.250  -0.639  16.354  1.00  0.00           N  
+HETATM    3  O1  UNL     1      -7.380   1.015  16.593  1.00  0.00           O  
+HETATM    4  S1  UNL     1      -5.923   0.850  16.770  1.00  0.00           S  
+HETATM    5  C2  UNL     1      -4.540   4.217  14.555  1.00  0.00           C  
+HETATM    6  N2  UNL     1      -3.670   3.190  14.612  1.00  0.00           N  
+HETATM    7  O2  UNL     1      -5.798   1.277  18.176  1.00  0.00           O  
+HETATM    8  S2  UNL     1      -5.947   3.481  15.214  1.00  0.00           S  
+HETATM    9  C3  UNL     1      -5.860   5.879  13.213  1.00  0.00           C  
+HETATM   10  N3  UNL     1      -3.861   2.443  15.699  1.00  0.00           N  
+HETATM   11  O3  UNL     1      -6.818   5.773  14.009  1.00  0.00           O  
+HETATM   12  C4  UNL     1      -5.752   7.137  12.450  1.00  0.00           C  
+HETATM   13  N4  UNL     1      -4.661   5.249  13.603  1.00  0.00           N  
+HETATM   14  H1  UNL     1      -5.014  -1.160  17.210  1.00  0.00           H  
+HETATM   15  H2  UNL     1      -5.928  -1.179  15.799  1.00  0.00           H  
+HETATM   16  H3  UNL     1      -5.680   7.984  13.149  1.00  0.00           H  
+HETATM   17  H4  UNL     1      -4.854   7.106  11.817  1.00  0.00           H  
+HETATM   18  H5  UNL     1      -6.643   7.259  11.817  1.00  0.00           H  
+HETATM   19  H6  UNL     1      -3.794   5.572  13.150  1.00  0.00           H  
+CONECT    1    4    8   10   10
+CONECT    2    4   14   15
+CONECT    3    4    4
+CONECT    4    7    7
+CONECT    5    6    6    8   13
+CONECT    6   10
+CONECT    9   11   11   12   13
+CONECT   12   16   17   18
+CONECT   13   19
+END

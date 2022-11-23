@@ -1,0 +1,45 @@
+COMPND    /data/masters/datasets/disco/data/HIVPR/PDB_Structures/3I8W_LIG.pdb
+HETATM    1  C1  UNL     1      21.344  -5.109  18.522  1.00  0.00           C  
+HETATM    2  C2  UNL     1      20.480  -5.944  17.791  1.00  0.00           C  
+HETATM    3  C3  UNL     1      19.471  -4.038  19.556  1.00  0.00           C  
+HETATM    4  C4  UNL     1      21.240  -3.239  19.411  1.00  0.00           C  
+HETATM    5 CO1  UNL     1      19.571  -4.626  18.184  1.00  0.00          CO6+
+HETATM    6  B1  UNL     1      22.569  -5.347  16.290  1.00  0.00           B1-
+HETATM    7  B2  UNL     1      21.115  -5.848  16.515  1.00  0.00           B1-
+HETATM    8  B3  UNL     1      21.292  -4.441  15.940  1.00  0.00           B1-
+HETATM    9  B4  UNL     1      19.189  -2.787  19.449  1.00  0.00           B1-
+HETATM   10  B5  UNL     1      19.955  -3.314  20.715  1.00  0.00           B1-
+HETATM   11  B6  UNL     1      21.421  -2.929  20.639  1.00  0.00           B1-
+HETATM   12  B7  UNL     1      21.196  -1.867  18.823  1.00  0.00           B1-
+HETATM   13  B8  UNL     1      19.538  -1.593  18.411  1.00  0.00           B1-
+HETATM   14  B9  UNL     1      19.061  -1.294  20.040  1.00  0.00           B1-
+HETATM   15  B10 UNL     1      20.195  -1.781  21.190  1.00  0.00           B1-
+HETATM   16  B11 UNL     1      21.464  -1.227  20.257  1.00  0.00           B1-
+HETATM   17  B12 UNL     1      20.331  -0.528  19.363  1.00  0.00           B1-
+HETATM   18  B13 UNL     1      21.820  -3.661  18.276  1.00  0.00           B  
+HETATM   19  B14 UNL     1      22.791  -5.401  18.106  1.00  0.00           B1-
+HETATM   20  B15 UNL     1      22.074  -6.451  17.362  1.00  0.00           B1-
+HETATM   21  B16 UNL     1      20.363  -3.390  16.492  1.00  0.00           B  
+HETATM   22  B17 UNL     1      21.926  -3.081  16.836  1.00  0.00           B1-
+HETATM   23  B18 UNL     1      22.966  -3.888  18.225  1.00  0.00           B  
+CONECT    1    2    5   18   19
+CONECT    2    5    7   20
+CONECT    3    4    5    9   10
+CONECT    4    5   11   12
+CONECT    5   21
+CONECT    6    7    8   19   20
+CONECT    7    8   20
+CONECT    8   21   22
+CONECT    9   10   13   14
+CONECT   10   11   15
+CONECT   11   15   16
+CONECT   12   13   16   17
+CONECT   13   14   17
+CONECT   14   15   17
+CONECT   15   16
+CONECT   16   17
+CONECT   18   22   23
+CONECT   19   20   23
+CONECT   21   22
+CONECT   22   23
+END

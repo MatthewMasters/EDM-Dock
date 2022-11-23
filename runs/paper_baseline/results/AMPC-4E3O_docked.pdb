@@ -1,0 +1,27 @@
+COMPND    /data/masters/datasets/disco/data/AMPC/PDB_Structures/4E3O_LIG.pdb
+HETATM    1 CL1  UNL     1      81.905   4.262  29.723  1.00  0.00          CL  
+HETATM    2  O1  UNL     1      77.705   2.339  28.520  1.00  0.00           O  
+HETATM    3  O2  UNL     1      76.622   3.161  26.549  1.00  0.00           O  
+HETATM    4  C1  UNL     1      76.742   4.533  28.751  1.00  0.00           C  
+HETATM    5  N1  UNL     1      77.824   5.114  27.938  1.00  0.00           N  
+HETATM    6  S1  UNL     1      79.194   4.927  28.640  1.00  0.00           S  
+HETATM    7  O3  UNL     1      79.583   6.183  29.460  1.00  0.00           O  
+HETATM    8  O4  UNL     1      79.056   4.034  29.885  1.00  0.00           O  
+HETATM    9  C2  UNL     1      80.888   4.865  28.258  1.00  0.00           C  
+HETATM   10  B1  UNL     1      76.574   3.116  27.990  1.00  0.00           B  
+HETATM   11  H1  UNL     1      77.682   2.355  29.509  1.00  0.00           H  
+HETATM   12  H2  UNL     1      77.310   3.813  26.262  1.00  0.00           H  
+HETATM   13  H3  UNL     1      77.041   4.403  29.801  1.00  0.00           H  
+HETATM   14  H4  UNL     1      75.827   5.141  28.818  1.00  0.00           H  
+HETATM   15  H5  UNL     1      77.847   4.646  27.021  1.00  0.00           H  
+HETATM   16  H6  UNL     1      81.228   5.873  27.978  1.00  0.00           H  
+HETATM   17  H7  UNL     1      81.028   4.158  27.427  1.00  0.00           H  
+CONECT    1    9
+CONECT    2   10   11
+CONECT    3   10   12
+CONECT    4    5   10   13   14
+CONECT    5    6   15
+CONECT    6    7    7    8    8
+CONECT    6    9
+CONECT    9   16   17
+END

@@ -1,0 +1,32 @@
+COMPND    /data/masters/datasets/disco/data/PTN1/PDB_Structures/2HB1_LIG.pdb
+HETATM    1  C1  UNL     1      44.856  12.826   1.804  1.00  0.00           C  
+HETATM    2  C2  UNL     1      45.928  13.257   2.557  1.00  0.00           C  
+HETATM    3  S1  UNL     1      44.552  14.301   1.059  1.00  0.00           S  
+HETATM    4  C3  UNL     1      45.072  15.435   2.288  1.00  0.00           C  
+HETATM    5  C4  UNL     1      45.757  14.544   3.104  1.00  0.00           C  
+HETATM    6  C5  UNL     1      44.960  16.900   2.253  1.00  0.00           C  
+HETATM    7  O1  UNL     1      45.705  17.709   1.700  1.00  0.00           O  
+HETATM    8  O2  UNL     1      46.418  15.157   4.199  1.00  0.00           O  
+HETATM    9  C6  UNL     1      47.043  16.411   4.094  1.00  0.00           C  
+HETATM   10  C7  UNL     1      46.588  17.479   4.975  1.00  0.00           C  
+HETATM   11  O3  UNL     1      46.205  18.629   4.684  1.00  0.00           O  
+HETATM   12  O4  UNL     1      43.980  17.459   3.046  1.00  0.00           O  
+HETATM   13  O5  UNL     1      46.762  17.427   6.338  1.00  0.00           O  
+HETATM   14 BR1  UNL     1      46.892  11.848   3.428  1.00  0.00          BR  
+HETATM   15  H1  UNL     1      44.365  11.846   1.720  1.00  0.00           H  
+HETATM   16  H2  UNL     1      48.115  16.260   4.291  1.00  0.00           H  
+HETATM   17  H3  UNL     1      46.787  16.762   3.083  1.00  0.00           H  
+HETATM   18  H4  UNL     1      43.858  18.441   3.062  1.00  0.00           H  
+HETATM   19  H5  UNL     1      46.441  18.171   6.907  1.00  0.00           H  
+CONECT    1    2    2    3   15
+CONECT    2    5   14
+CONECT    3    4
+CONECT    4    5    5    6
+CONECT    5    8
+CONECT    6    7    7   12
+CONECT    8    9
+CONECT    9   10   16   17
+CONECT   10   11   11   13
+CONECT   12   18
+CONECT   13   19
+END
