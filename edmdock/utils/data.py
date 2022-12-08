@@ -12,7 +12,7 @@ from torch.utils.data import DataLoader
 from glob import glob
 from tqdm import tqdm
 
-from .utils import load_pickle
+from edmdock.utils.utils import load_pickle
 
 
 class PairData(Data):

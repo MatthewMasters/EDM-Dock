@@ -1,14 +1,13 @@
 import torch
 from torch import nn
 from torch_geometric.nn import GCNConv, GATConv, GATv2Conv, radius_graph
-from torch_geometric.nn.acts import swish
 from dig.threedgraph.utils import xyz_to_dat
 from dig.threedgraph.method.spherenet.spherenet import emb, update_v, update_u
 from einops import repeat
 from torch.utils.checkpoint import checkpoint_sequential
 
-from .layers import E_GCL, SphereNetInit, SphereNetUpdateE, Block, Residual, PreNorm, EquivariantAttention, FeedForward, GuidedAttention, SelfAttention
-from ..utils import exists, default, ACTIVATIONS
+from edmdock.nn.layers import E_GCL, SphereNetInit, SphereNetUpdateE, Block, Residual, PreNorm, EquivariantAttention, FeedForward, GuidedAttention, SelfAttention
+from edmdock.utils import exists, default, ACTIVATIONS, swish
 
 
 class EGNN(nn.Module):

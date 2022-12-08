@@ -2,8 +2,8 @@ import torch
 from torch import nn
 import pytorch_lightning as pl
 
-from .networks import create_net
-from ..utils import get_optimizer
+from edmdock.nn.networks import create_net
+from edmdock.utils import get_optimizer
 
 
 class Model(pl.LightningModule):

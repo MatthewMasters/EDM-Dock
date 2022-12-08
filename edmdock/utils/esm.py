@@ -1,6 +1,6 @@
 import torch
 
-from .chem import AA_MAP, ONE_TO_THREE_LETTER_MAP
+from edmdock.utils.chem import AA_MAP, ONE_TO_THREE_LETTER_MAP
 
 
 RESIDUE_TO_ESM_TOKEN = {

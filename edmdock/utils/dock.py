@@ -11,7 +11,6 @@ from simtk.openmm import app, Platform, LangevinIntegrator
 from simtk.openmm.app import PDBFile, Simulation, Modeller
 from openmmforcefields.generators import SystemGenerator
 
-from .chem import RESIDUES
 
 TLEAP = '/home/masters/.conda/envs/masters/bin/tleap'
 PDB4AMBER = '/home/masters/.conda/envs/masters/bin/pdb4amber'

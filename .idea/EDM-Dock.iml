@@ -5,7 +5,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/dev_scripts" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.9 (masters)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.10 (edm-dock)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

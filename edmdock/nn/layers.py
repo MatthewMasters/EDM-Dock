@@ -1,12 +1,11 @@
 import torch
 import torch.nn.functional as F
 from torch import nn, einsum
-from torch_geometric.nn.acts import swish
 from torch_geometric.nn.inits import glorot_orthogonal
 from torch_scatter import scatter
 from einops import rearrange, repeat
 
-from ..utils import exists, max_neg_value, unsorted_segment_sum, unsorted_segment_mean, batched_index_select, broadcat
+from edmdock.utils import exists, max_neg_value, unsorted_segment_sum, unsorted_segment_mean, batched_index_select, broadcat, swish
 
 
 class E_GCL(nn.Module):

@@ -130,6 +130,10 @@ def random_rotate(coords):
     return coords
 
 
+def swish(x):
+    return x * x.sigmoid()
+
+
 def get_optimizer(model, name='adam', lr=0.01):
     parameters = filter(lambda p: p.requires_grad, model.parameters())
     name = name.lower()
