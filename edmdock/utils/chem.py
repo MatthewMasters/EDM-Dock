@@ -219,18 +219,8 @@ def load_ligand(ligand_path):
     ext = ligand_path.split('.')[-1]
     if ext == 'sdf':
         mol = next(Chem.SDMolSupplier(ligand_path))
-        # TODO: tmp
-        if mol is None:
-            mol = Chem.MolFromMol2File(ligand_path.replace('.sdf', '.mol2'))
-        if mol is None:
-            mol = Chem.MolFromPDBFile(ligand_path.replace('.sdf', '.pdb'))
     elif ext == 'mol2':
         mol = Chem.MolFromMol2File(ligand_path)
-        # TODO: tmp
-        if mol is None:
-            mol = next(Chem.SDMolSupplier(ligand_path.replace('.mol2', '.sdf')))
-        if mol is None:
-            mol = Chem.MolFromPDBFile(ligand_path.replace('.mol2', '.pdb'))
     elif ext == 'pdb':
         mol = Chem.MolFromPDBFile(ligand_path)
     else:

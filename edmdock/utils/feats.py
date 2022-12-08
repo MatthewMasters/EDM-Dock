@@ -188,7 +188,7 @@ def generate_simple(system_path):
     pocket_edge_index = np.array([[i, j] for i in range(pocket_n) for j in range(pocket_n) if i != j]).T
 
     # load ligand
-    ligand_path = os.path.join(system_path, 'ligand.mol2')
+    ligand_path = os.path.join(system_path, 'ligand.sdf')
     try:
         ligand = load_ligand(ligand_path)
         docked_pos = np.array(ligand.GetConformer(0).GetPositions(), dtype=float)
