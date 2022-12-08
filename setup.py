@@ -7,5 +7,6 @@ setup(
     author='Matthew Masters',
     author_email='matthew.masters@unibas.ch',
     packages=find_packages(include=['edmdock', 'edmdock.*']),
+    include_package_data=True,
     python_requires='>=3.9.5'
 )
