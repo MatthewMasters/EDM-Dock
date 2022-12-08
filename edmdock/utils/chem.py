@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 from rdkit import Chem
 from rdkit.Chem.rdchem import BondType as BT
@@ -209,7 +211,7 @@ BOND_TYPES = {
     BT.AROMATIC: 3,
     BT.UNSPECIFIED: 4
 }
-PERIODIC_TABLE = pd.read_csv('periodic_table.csv', index_col=0)
+PERIODIC_TABLE = pd.read_csv(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'periodic_table.csv'), index_col=0)
 
 
 def load_ligand(ligand_path):
