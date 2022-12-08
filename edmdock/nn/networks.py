@@ -1,8 +1,8 @@
 import torch
 from torch import nn
 from torch_geometric.nn import GCNConv, GATConv, GATv2Conv, radius_graph
-from dig.threedgraph.utils import xyz_to_dat
-from dig.threedgraph.method.spherenet.spherenet import emb, update_v, update_u
+# from dig.threedgraph.utils import xyz_to_dat
+# from dig.threedgraph.method.spherenet.spherenet import emb, update_v, update_u
 from einops import repeat
 from torch.utils.checkpoint import checkpoint_sequential
 
@@ -72,126 +72,126 @@ class GAT(nn.Module):
         return h
 
 
-class SphereNet(nn.Module):
-    r"""
-    The spherical message passing neural nn SphereNet from the
-    "Spherical Message Passing for 3D Graph Networks" <https://arxiv.org/abs/2102.05013>_ paper.
-
-    Args:
-        energy_and_force (bool, optional): If set to True, will predict energy and take the negative of the
-            derivative of the energy with respect to the atomic positions as predicted forces. (default: False)
-        cutoff (float, optional): Cutoff distance for interatomic interactions. (default: 5.0)
-        num_layers (int, optional): Number of building blocks. (default: 4)
-        hidden_channels (int, optional): Hidden embedding size. (default: 128)
-        out_channels (int, optional): Size of each output sample. (default: 1)
-        int_emb_size (int, optional): Embedding size used for interaction triplets. (default: 64)
-        basis_emb_size_dist (int, optional): Embedding size used in the basis transformation of distance. (default: 8)
-        basis_emb_size_angle (int, optional): Embedding size used in the basis transformation of angle. (default: 8)
-        basis_emb_size_torsion (int, optional): Embedding size used in the basis transformation of torsion. (default: 8)
-        out_emb_channels (int, optional): Embedding size used for atoms in the output block. (default: 256)
-        num_spherical (int, optional): Number of spherical harmonics. (default: 7)
-        num_radial (int, optional): Number of radial basis functions. (default: 6)
-        envelope_exponent (int, optional): Shape of the smooth cutoff. (default: 5)
-        num_before_skip (int, optional): Number of residual layers in the interaction blocks before the skip connection.
-            (default: 1)
-        num_after_skip (int, optional): Number of residual layers in the interaction blocks before the skip connection.
-            (default: 2)
-        num_output_layers (int, optional): Number of linear layers for the output blocks. (default: 3)
-        act: (function, optional): The activation funtion. (default: swish)
-        output_init: (str, optional): The initialization fot the output. It could be GlorotOrthogonal and zeros.
-            (default: GlorotOrthogonal)
-    """
-
-    def __init__(
-            self,
-            energy_and_force=False,
-            cutoff=5.0,
-            num_layers=4,
-            input_channels=1,
-            hidden_channels=128,
-            out_channels=1,
-            int_emb_size=64,
-            basis_emb_size_dist=8,
-            basis_emb_size_angle=8,
-            basis_emb_size_torsion=8,
-            out_emb_channels=256,
-            num_spherical=7,
-            num_radial=6,
-            envelope_exponent=5,
-            num_before_skip=1,
-            num_after_skip=2,
-            num_output_layers=3,
-            act=swish,
-            output_init='GlorotOrthogonal',
-            use_node_features=True,
-            radius_graph=True,
-            norm=False,
-            use_u=False,
-            **kwargs
-    ):
-        super(SphereNet, self).__init__()
-        self.cutoff = cutoff
-        self.energy_and_force = energy_and_force
-        self.radius_graph = radius_graph
-        self.norm = norm
-        self.use_u = use_u
-
-        self.init_e = SphereNetInit(num_radial, input_channels, hidden_channels, act, norm, use_node_features)
-        self.init_v = update_v(hidden_channels, out_emb_channels, out_channels, num_output_layers, act, output_init)
-        # self.init_u = update_u()
-        self.emb = emb(num_spherical, num_radial, cutoff, envelope_exponent)
-
-        self.update_vs = nn.ModuleList([
-            update_v(hidden_channels, out_emb_channels, out_channels, num_output_layers, act, output_init)
-            for _ in range(num_layers)
-        ])
-        self.update_es = nn.ModuleList([
-            SphereNetUpdateE(hidden_channels, int_emb_size, basis_emb_size_dist, basis_emb_size_angle, basis_emb_size_torsion,
-                     num_spherical, num_radial, num_before_skip, num_after_skip, norm, act)
-            for _ in range(num_layers)
-        ])
-        if use_u:
-            assert NotImplementedError
-            self.update_us = nn.ModuleList([update_u() for _ in range(num_layers)])
-
-        self.reset_parameters()
-
-    def reset_parameters(self):
-        self.init_e.reset_parameters()
-        self.init_v.reset_parameters()
-        self.emb.reset_parameters()
-        for update_e in self.update_es:
-            update_e.reset_parameters()
-        for update_v in self.update_vs:
-            update_v.reset_parameters()
-
-    def forward(self, h, edges, coords, batch, edge_attr=None):
-        if self.energy_and_force:
-            coords.requires_grad_()
-
-        if self.radius_graph:
-            # raise NotImplementedError
-            edge_index = radius_graph(coords, r=self.cutoff, batch=batch)
-
-        num_nodes = h.size(0)
-        # print(num_nodes)
-        dist, angle, torsion, i, j, idx_kj, idx_ji = xyz_to_dat(coords, edges, num_nodes, use_torsion=True)
-        emb = self.emb(dist, angle, torsion, idx_kj)
-        # print('rbf', torch.min(rbf), torch.max(rbf))
-        # Initialize edge, node, graph features
-        e = self.init_e(h, emb, i, j)
-        # print('e', torch.min(e[0]), torch.max(e[0]), torch.min(e[1]), torch.max(e[1]))
-        v = self.init_v(e, i)
-        # print('v', torch.min(v), torch.max(v))
-        # u = self.init_u(torch.zeros_like(scatter(v, batch, dim=0)), v, batch)  # scatter(v, batch, dim=0)
-        for idx, (update_e, update_v) in enumerate(zip(self.update_es, self.update_vs)):
-            e = update_e(e, emb, idx_kj, idx_ji)
-            v = update_v(e, i)
-            # v = self.norm(v)
-            # print(idx, torch.min(e[0]), torch.max(e[0]), torch.min(e[1]), torch.max(e[1]))
-            # print(idx, torch.min(v), torch.max(v))
-            # u = update_u(u, v, batch)  # u += scatter(v, batch, dim=0)
-        return v
+# class SphereNet(nn.Module):
+#     r"""
+#     The spherical message passing neural nn SphereNet from the
+#     "Spherical Message Passing for 3D Graph Networks" <https://arxiv.org/abs/2102.05013>_ paper.
+#
+#     Args:
+#         energy_and_force (bool, optional): If set to True, will predict energy and take the negative of the
+#             derivative of the energy with respect to the atomic positions as predicted forces. (default: False)
+#         cutoff (float, optional): Cutoff distance for interatomic interactions. (default: 5.0)
+#         num_layers (int, optional): Number of building blocks. (default: 4)
+#         hidden_channels (int, optional): Hidden embedding size. (default: 128)
+#         out_channels (int, optional): Size of each output sample. (default: 1)
+#         int_emb_size (int, optional): Embedding size used for interaction triplets. (default: 64)
+#         basis_emb_size_dist (int, optional): Embedding size used in the basis transformation of distance. (default: 8)
+#         basis_emb_size_angle (int, optional): Embedding size used in the basis transformation of angle. (default: 8)
+#         basis_emb_size_torsion (int, optional): Embedding size used in the basis transformation of torsion. (default: 8)
+#         out_emb_channels (int, optional): Embedding size used for atoms in the output block. (default: 256)
+#         num_spherical (int, optional): Number of spherical harmonics. (default: 7)
+#         num_radial (int, optional): Number of radial basis functions. (default: 6)
+#         envelope_exponent (int, optional): Shape of the smooth cutoff. (default: 5)
+#         num_before_skip (int, optional): Number of residual layers in the interaction blocks before the skip connection.
+#             (default: 1)
+#         num_after_skip (int, optional): Number of residual layers in the interaction blocks before the skip connection.
+#             (default: 2)
+#         num_output_layers (int, optional): Number of linear layers for the output blocks. (default: 3)
+#         act: (function, optional): The activation funtion. (default: swish)
+#         output_init: (str, optional): The initialization fot the output. It could be GlorotOrthogonal and zeros.
+#             (default: GlorotOrthogonal)
+#     """
+#
+#     def __init__(
+#             self,
+#             energy_and_force=False,
+#             cutoff=5.0,
+#             num_layers=4,
+#             input_channels=1,
+#             hidden_channels=128,
+#             out_channels=1,
+#             int_emb_size=64,
+#             basis_emb_size_dist=8,
+#             basis_emb_size_angle=8,
+#             basis_emb_size_torsion=8,
+#             out_emb_channels=256,
+#             num_spherical=7,
+#             num_radial=6,
+#             envelope_exponent=5,
+#             num_before_skip=1,
+#             num_after_skip=2,
+#             num_output_layers=3,
+#             act=swish,
+#             output_init='GlorotOrthogonal',
+#             use_node_features=True,
+#             radius_graph=True,
+#             norm=False,
+#             use_u=False,
+#             **kwargs
+#     ):
+#         super(SphereNet, self).__init__()
+#         self.cutoff = cutoff
+#         self.energy_and_force = energy_and_force
+#         self.radius_graph = radius_graph
+#         self.norm = norm
+#         self.use_u = use_u
+#
+#         self.init_e = SphereNetInit(num_radial, input_channels, hidden_channels, act, norm, use_node_features)
+#         self.init_v = update_v(hidden_channels, out_emb_channels, out_channels, num_output_layers, act, output_init)
+#         # self.init_u = update_u()
+#         self.emb = emb(num_spherical, num_radial, cutoff, envelope_exponent)
+#
+#         self.update_vs = nn.ModuleList([
+#             update_v(hidden_channels, out_emb_channels, out_channels, num_output_layers, act, output_init)
+#             for _ in range(num_layers)
+#         ])
+#         self.update_es = nn.ModuleList([
+#             SphereNetUpdateE(hidden_channels, int_emb_size, basis_emb_size_dist, basis_emb_size_angle, basis_emb_size_torsion,
+#                      num_spherical, num_radial, num_before_skip, num_after_skip, norm, act)
+#             for _ in range(num_layers)
+#         ])
+#         if use_u:
+#             assert NotImplementedError
+#             self.update_us = nn.ModuleList([update_u() for _ in range(num_layers)])
+#
+#         self.reset_parameters()
+#
+#     def reset_parameters(self):
+#         self.init_e.reset_parameters()
+#         self.init_v.reset_parameters()
+#         self.emb.reset_parameters()
+#         for update_e in self.update_es:
+#             update_e.reset_parameters()
+#         for update_v in self.update_vs:
+#             update_v.reset_parameters()
+#
+#     def forward(self, h, edges, coords, batch, edge_attr=None):
+#         if self.energy_and_force:
+#             coords.requires_grad_()
+#
+#         if self.radius_graph:
+#             # raise NotImplementedError
+#             edge_index = radius_graph(coords, r=self.cutoff, batch=batch)
+#
+#         num_nodes = h.size(0)
+#         # print(num_nodes)
+#         dist, angle, torsion, i, j, idx_kj, idx_ji = xyz_to_dat(coords, edges, num_nodes, use_torsion=True)
+#         emb = self.emb(dist, angle, torsion, idx_kj)
+#         # print('rbf', torch.min(rbf), torch.max(rbf))
+#         # Initialize edge, node, graph features
+#         e = self.init_e(h, emb, i, j)
+#         # print('e', torch.min(e[0]), torch.max(e[0]), torch.min(e[1]), torch.max(e[1]))
+#         v = self.init_v(e, i)
+#         # print('v', torch.min(v), torch.max(v))
+#         # u = self.init_u(torch.zeros_like(scatter(v, batch, dim=0)), v, batch)  # scatter(v, batch, dim=0)
+#         for idx, (update_e, update_v) in enumerate(zip(self.update_es, self.update_vs)):
+#             e = update_e(e, emb, idx_kj, idx_ji)
+#             v = update_v(e, i)
+#             # v = self.norm(v)
+#             # print(idx, torch.min(e[0]), torch.max(e[0]), torch.min(e[1]), torch.max(e[1]))
+#             # print(idx, torch.min(v), torch.max(v))
+#             # u = update_u(u, v, batch)  # u += scatter(v, batch, dim=0)
+#         return v
 
 
 class EnTransformer(nn.Module):
@@ -421,7 +421,7 @@ class Attn2(nn.Module):
         return torch.vstack([mu, var]).T
 
 
-MOL_NETS = {'egnn': EGNN, 'gcn': GCN, 'gat': GAT, 'spherenet': SphereNet, 'en-transformer': EnTransformer}
+MOL_NETS = {'egnn': EGNN, 'gcn': GCN, 'gat': GAT, 'en-transformer': EnTransformer} # 'spherenet': SphereNet,
 DIS_NETS = {'l2': L2, 'mlp': MLP, 'mlp2': MLP2, 'attn': Attn, 'attn2': Attn2}
 ALL_NETS = {**MOL_NETS, **DIS_NETS}
 
