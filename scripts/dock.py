@@ -10,9 +10,12 @@ from pytorch_lightning import Trainer
 from rdkit.Chem.rdDistGeom import GetMoleculeBoundsMatrix
 
 from edmdock.utils.dock import Minimizer
-from edmdock import create_model
-from edmdock import load_config, set_seed, get_last_checkpoint, load_dataset
-from edmdock import load_ligand, write_input, write_xyz, run_dgsol, get_results, c_to_d, align_coords, get_rmsd
+from edmdock.nn.model import create_model
+from edmdock.utils.utils import load_config, get_last_checkpoint
+from edmdock.utils.chem import load_ligand, write_xyz
+from edmdock.utils.data import load_dataset
+from edmdock.utils.nn import set_seed
+from edmdock.utils.dock import write_input, run_dgsol, get_results, c_to_d, align_coords, get_rmsd
 
 
 def prepare_inputs_single(preds, batches):

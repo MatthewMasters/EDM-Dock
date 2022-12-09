@@ -33,17 +33,14 @@ The `box.csv` file defines the binding site box and should have six comma-sepera
 ```
 center_x, center_y, center_z, width_x, width_y, width_z
 ```
-#### Step 2: Download the pre-trained model weights
-```
-wget https://...
-unzip ...
-```
 #### Step 3: Prepare the features using the following command
 ```
 python scripts/prepare.py --dataset_path [dataset_path]
 ```
-#### Step 4: Copy and edit configuration files
-Copy `configs/default.yml` and ensure 
+#### Step 4: Edit configuration files
+
+
+
 ### Train model using your own dataset
 
 ### Reference
