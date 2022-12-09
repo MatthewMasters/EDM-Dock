@@ -132,8 +132,6 @@ class Minimizer:
             if p.getSpeed() > self.speed:
                 self.platform = p
                 self.speed = p.getSpeed()
-             # TODO: force cpu
-            # if p.getName() == 'CPU': break
 
         if self.platform.getName() == 'CUDA' or self.platform.getName() == 'OpenCL':
             self.platform.setPropertyDefaultValue('Precision', 'mixed')

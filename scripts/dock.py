@@ -84,11 +84,11 @@ def run_docking(inp):
     Chem.MolToPDBFile(rdkitmolh, os.path.join(results_path, f'{key}_docked.pdb'))
 
     if dock_config['minimize']:
-        # try:
-        min_coords = minimizer.minimize(path, rdkitmolh, recon_pocket_coords, mu, var)
-        min_rmsd = get_rmsd(docked_coords, min_coords)
-        # except:
-        #     min_rmsd = rmsd
+        try:
+            min_coords = minimizer.minimize(path, rdkitmolh, recon_pocket_coords, mu, var)
+            min_rmsd = get_rmsd(docked_coords, min_coords)
+        except:
+            min_rmsd = rmsd
         out = (key, rmsd, min_rmsd)
     else:
         out = (key, rmsd)
@@ -113,19 +113,13 @@ if __name__ == '__main__':
     set_seed(config.seed)
 
     model = create_model(model_config)
-    model.load_state_dict(torch.load(weight_path)['state_dict']) #, map_location='cuda'
+    model.load_state_dict(torch.load(weight_path)['state_dict'])
     model.eval()
 
     batch_size = 1
     dl_kwargs = dict(batch_size=batch_size, num_workers=config['num_workers'])
     print('Loading test set...')
-    # TODO: tmp
-    # all_keys = pd.read_csv('/data/masters/projects/EDM-Dock/dev_scripts/our_crossdock.csv')['key'].values
-    # skip_keys = [key for key in all_keys if os.path.exists(f'/data/masters/datasets/edm-dock-dataset-simple/test/disco/{key}/{key}_min.pdb')]
-    # print(len(skip_keys))
-    # skip_keys = [key for key in all_keys if 'BACE1' not in key] # , skip_keys=skip_keys
-    skip_keys = []
-    test_dl = load_dataset(data_config['test_path'], data_config['filename'], skip_keys=skip_keys, n=500, skip_n=0, shuffle=False, **dl_kwargs)
+    test_dl = load_dataset(data_config['test_path'], data_config['filename'], shuffle=False, **dl_kwargs)
 
     trainer = Trainer(gpus=config['cuda'])
     outputs = trainer.predict(model, test_dl)
@@ -136,7 +130,7 @@ if __name__ == '__main__':
     columns = ['key', 'rmsd']
     if dock_config['minimize']:
         minimizer = Minimizer()
-        columns += ['rmsd_min', 'energy']
+        columns += ['rmsd_min']
         data = []
         for inp in inputs:
             out = run_docking(inp)
