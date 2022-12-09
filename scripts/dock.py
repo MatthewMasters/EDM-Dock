@@ -99,7 +99,7 @@ def run_docking(inp):
 if __name__ == '__main__':
     t0 = time.time()
     parser = argparse.ArgumentParser(description='edmdock')
-    parser.add_argument('--run-path', type=str, help='path of saved run (requires config and weights)', required=True)
+    parser.add_argument('--run_path', type=str, help='path of saved run (requires config and weights)', required=True)
     args = parser.parse_args()
     config_path = os.path.join(args.run_path, 'config.yml')
     weight_path = get_last_checkpoint(args.run_path)

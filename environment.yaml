@@ -325,13 +325,25 @@ dependencies:
   - zlib=1.2.13=h166bdaf_4
   - zstd=1.5.2=h8a70e8d_2
   - pip:
+    - aiohttp==3.8.3
+    - aiosignal==1.3.1
     - amberlite==22.0
     - amberutils==21.0
+    - async-timeout==4.0.2
     - easydict==1.10
     - edm-dock==1.0
+    - frozenlist==1.3.3
+    - fsspec==2022.11.0
+    - lightning-utilities==0.4.2
     - mmpbsa-py==16.0
+    - multidict==6.0.3
     - packmol-memgen==1.2.3rc0
     - pdb4amber==22.0
+    - protobuf==3.20.1
+    - pytorch-lightning==1.8.4
     - pytraj==2.0.6
     - sander==22.0
+    - tensorboardx==2.5.1
+    - torchmetrics==0.11.0
+    - yarl==1.8.2
 prefix: /home/masters/miniconda3/envs/edm-dock
