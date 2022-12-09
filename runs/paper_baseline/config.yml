@@ -10,7 +10,7 @@ save_path: /data/masters/projects/EDM-Dock/runs
 data:
   train_path: /data/masters/datasets/edm-dock-dataset-simple/train
   valid_path: /data/masters/datasets/edm-dock-dataset-simple/valid
-  test_path: /data/masters/datasets/Cryptic
+  test_path: /data/masters/tools/EDM-Dock/examples
   filename: simple.pkl
 model:
   optimizer:

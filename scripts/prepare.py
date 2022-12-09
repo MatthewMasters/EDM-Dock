@@ -5,7 +5,7 @@ import argparse
 from glob import glob
 from multiprocessing import Pool
 
-from edmdock import generate_pocket_multichain, generate_simple
+from edmdock.utils.feats import generate_pocket_multichain, generate_simple
 
 
 def prepare(dataset_path, num_workers=1):
