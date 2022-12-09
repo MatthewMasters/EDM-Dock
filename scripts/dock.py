@@ -129,7 +129,7 @@ if __name__ == '__main__':
 
     trainer = Trainer(gpus=config['cuda'])
     outputs = trainer.predict(model, test_dl)
-    print(outputs)
+    # print(outputs)
     preds, targets, losses, batches = zip(*outputs)
     inputs = prepare_inputs_single(preds, batches) if batch_size == 1 else prepare_inputs_multi(preds, batches)
 
@@ -147,7 +147,6 @@ if __name__ == '__main__':
     data = pd.DataFrame(data, columns=columns)
     data.to_csv(os.path.join(results_path, f'results.csv'), index=False)
     print(data['rmsd'].describe())
-
 
     t1 = time.time()
     t = t1 - t0

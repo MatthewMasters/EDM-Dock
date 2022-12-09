@@ -65,7 +65,7 @@ class Model(pl.LightningModule):
         self.log('val_loss', loss)
         self.log('val_mae', metric)
 
-    def predict_step(self, batch, batch_idx, dataloader_idx):
+    def predict_step(self, batch, batch_idx):
         target = batch.dis_gt
         pred = self.forward(batch.clone())
         loss = self.loss(pred, target)

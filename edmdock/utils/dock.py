@@ -179,7 +179,7 @@ class Minimizer:
         return force
 
     def create_system(self, path, ligand_mol, pred_pocket_coords, mu, var):
-        protein_pdb = PDBFile(os.path.join(path, 'protein_amber.pdb'))
+        protein_pdb = PDBFile(os.path.join(path, 'protein.pdb'))
         # protein_pdb = PDBFile(os.path.join(path, 'protein.pdb'))
         protein_coords = np.array([[c.x, c.y, c.z] for c in protein_pdb.positions]) * 10
 
