@@ -7,7 +7,8 @@ from einops import repeat
 from torch.utils.checkpoint import checkpoint_sequential
 
 from edmdock.nn.layers import E_GCL, SphereNetInit, SphereNetUpdateE, Block, Residual, PreNorm, EquivariantAttention, FeedForward, GuidedAttention, SelfAttention
-from edmdock.utils import exists, default, ACTIVATIONS, swish
+from edmdock.utils.utils import exists, default
+from edmdock.utils.nn import ACTIVATIONS, swish
 
 
 class EGNN(nn.Module):

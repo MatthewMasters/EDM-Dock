@@ -5,7 +5,8 @@ from torch_geometric.nn.inits import glorot_orthogonal
 from torch_scatter import scatter
 from einops import rearrange, repeat
 
-from edmdock.utils import exists, max_neg_value, unsorted_segment_sum, unsorted_segment_mean, batched_index_select, broadcat, swish
+from edmdock.utils.utils import exists
+from edmdock.utils.nn import max_neg_value, unsorted_segment_sum, unsorted_segment_mean, batched_index_select, broadcat, swish
 
 
 class E_GCL(nn.Module):
