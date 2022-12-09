@@ -38,7 +38,7 @@ center_x, center_y, center_z, width_x, width_y, width_z
 python scripts/prepare.py --dataset_path [dataset_path]
 ```
 #### Step 3: Download DGSOL
-Since DGSOL does not have an MIT license, it's code is not included in this project.
+Since DGSOL does not have an MIT license, it's code is included in a seperate repository (https://github.com/MatthewMasters/DGSOL.git).
 Once you have downloaded DGSOL independently, update the path at the top of `edmdock/utils/dock.py` to reflect the path on your system.
 Remember to rebuild the package by issuing the command `python setup.py install`.
 
