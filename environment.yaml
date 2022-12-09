@@ -37,7 +37,7 @@ dependencies:
   - bson=0.5.9=py_0
   - bzip2=1.0.8=h7f98852_4
   - c-ares=1.18.1=h7f98852_0
-  - ca-certificates=2020.6.20=hecda079_0
+  - ca-certificates=2022.12.7=ha878542_0
   - cairo=1.16.0=ha61ee94_1012
   - certifi=2022.12.7=pyhd8ed1ab_0
   - cffi=1.15.1=py39he91dace_0
@@ -197,7 +197,7 @@ dependencies:
   - openforcefields=2.0.0rc.2=py_0
   - openh264=2.1.1=h780b84a_0
   - openjpeg=2.4.0=hb52868f_1
-  - openmm=7.7.0=py39h15fbce5_1
+  - openmm=7.5.1=py39h71eca04_1
   - openmmforcefields=0.7.4=py_0
   - openssl=1.1.1s=h0b41bf4_1
   - packaging=21.3=pyhd8ed1ab_0
@@ -332,6 +332,7 @@ dependencies:
     - async-timeout==4.0.2
     - easydict==1.10
     - edm-dock==1.0
+    - einops==0.6.0
     - frozenlist==1.3.3
     - fsspec==2022.11.0
     - lightning-utilities==0.4.2
