@@ -6,9 +6,9 @@ Code for our paper [**Deep Learning Model for Flexible and Efficient Protein-Lig
 
 ```
 git clone https://github.com/MatthewMasters/EDM-Dock
-conda env create -f environment.yml -n edm-dock
-conda activate edm-dock
 cd EDM-Dock
+conda env create -f environment.yaml -n edm-dock
+conda activate edm-dock
 python setup.py install
 ```
 
