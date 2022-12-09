@@ -100,6 +100,7 @@ if __name__ == '__main__':
     t0 = time.time()
     parser = argparse.ArgumentParser(description='edmdock')
     parser.add_argument('--run_path', type=str, help='path of saved run (requires config and weights)', required=True)
+    parser.add_argument('--dataset_path', type=str, help='path of dataset to use for docking (if not used, config test set is used)', required=False)
     args = parser.parse_args()
     config_path = os.path.join(args.run_path, 'config.yml')
     weight_path = get_last_checkpoint(args.run_path)
@@ -109,6 +110,8 @@ if __name__ == '__main__':
         os.mkdir(results_path)
     config = load_config(config_path)
     data_config, model_config, dock_config = config['data'], config['model'], config['dock']
+    if args.dataset_path is not None:
+        data_config['test_path'] = args.dataset_path
     os.environ['CUDA_VISIBLE_DEVICES'] = str(config['cuda'])
     set_seed(config.seed)
 

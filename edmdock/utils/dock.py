@@ -12,8 +12,6 @@ from simtk.openmm.app import PDBFile, Simulation, Modeller
 from openmmforcefields.generators import SystemGenerator
 
 
-TLEAP = '/home/masters/.conda/envs/masters/bin/tleap'
-PDB4AMBER = '/home/masters/.conda/envs/masters/bin/pdb4amber'
 DGSOL = '/data/masters/projects/EDM-Dock/DGSOL/build/src/dgsol_s/dgsol_s'
 K_UNIT = unit.kilojoule_per_mole / unit.angstrom ** 2
 
