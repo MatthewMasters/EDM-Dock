@@ -175,7 +175,7 @@ class Minimizer:
                 # if v > cutoff: continue
                 if r > cutoff: continue
                 k = k_scaling / r
-                force.addBond(l_idx, p_idx, r * unit.angstrom, k * K_UNIT)
+                force.addBond(int(l_idx), int(p_idx), float(r) * unit.angstrom, float(k) * K_UNIT)
         return force
 
     def create_system(self, path, ligand_mol, pred_pocket_coords, mu, var):
