@@ -21,11 +21,11 @@ python setup.py install
 dataset_path/
     sys1/
         protein.pdb
-        ligand.mol2
+        ligand.sdf
         box.csv
     sys2/
         protein.pdb
-        ligand.mol2
+        ligand.sdf
         box.csv
     ...
 ```
