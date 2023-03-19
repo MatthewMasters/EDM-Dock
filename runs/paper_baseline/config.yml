@@ -38,6 +38,6 @@ model:
     activation: relu
 dock:
   k: 1.0
-  n_sol: 10
+  n_sol: 1
   minimize: true
 
